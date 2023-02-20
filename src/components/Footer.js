@@ -2,7 +2,7 @@ export default function Footer(){
     return (
         <>
             <footer>
-                <img src="./public/Logo.svg" alt="little lemon logo"/>
+                <img src="Logo.svg" alt="little lemon logo"/>
                 <h2>Navigation</h2>
                 <ul>
                     <li><a href="#home">Home</a></li>
