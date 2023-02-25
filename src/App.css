@@ -1,6 +1,17 @@
 .App {
   text-align: center;
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Markazi Text';
+}
+p {
+  font-family: 'Karla';
+  font-size: 20px;
+  font-weight: 500;
+}
+img {
+  border-radius: 20px;
+}
 
 
 Footer {
