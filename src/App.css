@@ -11,12 +11,13 @@ p {
 }
 img {
   border-radius: 20px;
+  width: 100px;
 }
 
 
 Footer {
   display: flex;
-  background-color: #BFBFBF;
+  background-color: #495E57;
   font-size: 0.7rem;
   justify-content: space-around;
 }
@@ -36,5 +37,10 @@ Nav a{
   font-weight: 900;
   font-family: 'Markazi Text';
   font-style: normal;
+}
+
+.hero-section {
+  display: flex;
+  background-color: #495E57;
 }
 
