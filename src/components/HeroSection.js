@@ -1,4 +1,4 @@
-
+import {Link} from 'react-router-dom';
 
 export default function HeroSection(){
     return (
@@ -11,7 +11,7 @@ export default function HeroSection(){
                     Fusce nulla leo, placerat dignissim finibus eu,
                     tristique sed metus. Etiam quam nulla, ornare sit amet diam
                 </p>
-                <button>Reserve a table</button>
+                <Link to='/reserve-table'><button>Reserve a table</button></Link>
             </div>
             <div>
                 <img src='hero-section.jpg' alt='restaurant food'></img>
