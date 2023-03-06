@@ -5,9 +5,15 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Markazi Text';
 }
+h1{
+  font-size: 3vw;
+}
+h2{
+  font-size: 2vw;
+}
 p {
   font-family: 'Karla';
-  font-size: 20px;
+  font-size: 1.5vw;
   font-weight: 500;
 }
 img {
@@ -32,6 +38,8 @@ nav ul{
   list-style-type: none;
   justify-content: space-evenly;
   align-items: center;
+  padding-left: 4vw;
+  padding-right: 4vw;
 }
 nav li{
   font-size: 1.5vw;
@@ -53,33 +61,35 @@ nav img {
   background-color: #495E57;
   justify-content: space-evenly;
   align-items: center;
+  height: 25vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 .hero-section>div{
   flex-basis: 50%;
 }
-.hero-section div:nth-child(2){
-  text-align: center;
-  padding-top: 5rem;
-  width: 300px;
-}
-.hero-section div:nth-child(1){
-  padding-left: 10vw;
-  padding-bottom: 2rem;
-}
-.hero-section div:nth-child(1) h1 {
+
+.hero-section h1 {
   color: #F4CE14;
 }
-.hero-section div:nth-child(1) h2, p {
+.hero-section h2, p {
   color: #EDEFDE;
 }
 .hero-section button {
   background-color: #F4CE14;
   color: #000000;
   font-family: 'Karla';
-  width: 10rem;
-  height: 4rem;
+  width: 15vw;
+  height: 5vw;
   border-radius: 20px;
-  font-size: 18px;
+  border-style: none;
+  font-size: 2vw;
+}
+.hero-section img{
+  width: 20vw;
+  position: relative;
+  top: 5vw;
+  left: 17vw;
 }
 
 
