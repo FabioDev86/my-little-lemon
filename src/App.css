@@ -1,7 +1,7 @@
+/*GENERAL STYLING*/
 .App {
   text-align: center;
 }
-
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Markazi Text';
 }
@@ -15,8 +15,7 @@ img {
   width: 100px;
 }
 
-
-
+/*FOOTER STYLING*/
 Footer {
   display: flex;
   background-color: #495E57;
@@ -26,24 +25,46 @@ Footer {
 Footer ul {
   list-style-type: none;
 }
-Nav ul{
+
+/*NAV STYLING*/
+nav ul{
   display: flex;
   list-style-type: none;
-  gap: 1rem;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
-Nav a{
+nav li{
+  font-size: 1.5vw;
+}
+nav a{
   text-decoration: none;
   color: #495E57;
   font-weight: 900;
   font-family: 'Markazi Text';
   font-style: normal;
 }
+nav img {
+  width: 14vw;
+}
 
+/*HERO SECTION STYLING*/
 .hero-section {
   display: flex;
   background-color: #495E57;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hero-section>div{
+  flex-basis: 50%;
+}
+.hero-section div:nth-child(2){
+  text-align: center;
+  padding-top: 5rem;
+  width: 300px;
+}
+.hero-section div:nth-child(1){
+  padding-left: 10vw;
+  padding-bottom: 2rem;
 }
 .hero-section div:nth-child(1) h1 {
   color: #F4CE14;
@@ -53,7 +74,8 @@ Nav a{
 }
 .hero-section button {
   background-color: #F4CE14;
-  color: #333333;
+  color: #000000;
+  font-family: 'Karla';
   width: 10rem;
   height: 4rem;
   border-radius: 20px;
