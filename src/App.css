@@ -92,5 +92,14 @@ nav img {
   left: 17vw;
 }
 
+/*HIGHLIGHTS STYLING*/
+.highlights {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+.highlights>div {
+  display: flex;
+}
+
 
 
