@@ -101,5 +101,12 @@ nav img {
   display: flex;
 }
 
+/*BOOKING FORM STYLING*/
+.BookingForm form{
+  display: grid;
+  max-width: 200px;
+  gap: 20px
+}
+
 
 
