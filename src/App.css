@@ -68,11 +68,10 @@ nav img {
 .hero-section>div{
   flex-basis: 50%;
 }
-
 .hero-section h1 {
   color: #F4CE14;
 }
-.hero-section h2, p {
+.hero-section h2, .hero-section p {
   color: #EDEFDE;
 }
 .hero-section button {
@@ -96,9 +95,22 @@ nav img {
 .highlights {
   padding-left: 10vw;
   padding-right: 10vw;
+  padding-top: 12vw;
 }
 .highlights>div {
   display: flex;
+  justify-content: space-between;
+}
+.highlights h1~button{
+  background-color: #F4CE14;
+  color: #000000;
+  font-family: 'Karla';
+  width: 15vw;
+  height: 5vw;
+  border-radius: 20px;
+  border-style: none;
+  font-size: 2vw;
+  margin-right: 5vw;
 }
 
 /*BOOKING FORM STYLING*/

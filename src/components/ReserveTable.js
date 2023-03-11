@@ -1,10 +1,10 @@
 import BookForm from "./BookForm";
 
-export default function ReserveTable(){
+export default function ReserveTable(props){
     return(
         <>
             <h1>Reserve a table</h1>
-            <BookForm />
+            <BookForm avaibleTimes={props.avaibleTimes} setAvaibleTimes={props.setAvaibleTimes} />
         </>
     );
 }

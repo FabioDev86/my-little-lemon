@@ -6,7 +6,7 @@ export default function Plate(props){
             <p>{props.price}</p>
             <p>{props.description}</p>
             <h3>Order a delivery</h3>
-            <button>Icon</button>
+            <button>Basket Icon</button>
         </article>
     );
 }
