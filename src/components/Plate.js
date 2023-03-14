@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTruck } from '@fortawesome/free-solid-svg-icons'
+
 export default function Plate(props){
     return(
         <article className = "plate">
@@ -6,7 +9,7 @@ export default function Plate(props){
             <p>{props.price}</p>
             <p>{props.description}</p>
             <h3>Order a delivery</h3>
-            <button>Basket Icon</button>
+            <FontAwesomeIcon icon={faTruck} />
         </article>
     );
 }
