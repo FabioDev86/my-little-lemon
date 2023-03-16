@@ -7,10 +7,15 @@ export default function BookForm(props){
     const [guests, setGuests] = useState(0);
     const [occasion, setOccasion] = useState("no occasion");
 
+    function handleSubmit(e){
+        e.preventDefault();
+        const newAvaibleTimes = props.avaibleTimes.filter( t => t !== time);
+        props.setAvaibleTimes(newAvaibleTimes);
+    }
 
     return(
         <div className="BookingForm">
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label htmlFor="res-date">Choose date</label>
                 <input type="date" id="res-date" onChange={(e) => {setDate(e.target.value);}} />
                 <label htmlFor="res-time">Choose time</label>
