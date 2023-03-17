@@ -137,6 +137,39 @@ nav img {
   padding-right: 3vw;
 }
 
+/*TESTIMONIALS STYLING*/
+.testimonials {
+  background-color: #495E57;
+  text-align: center;
+  padding: 3vw;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+}
+.testimonials>h1 {
+  color: #F4CE14;
+  padding-bottom: 2vw;
+}
+.testimonial-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 5vw;
+}
+.testimonial {
+  background-color: #EDEFDE;
+  text-align: left;
+  padding: 2vw;
+}
+.testimonial>img {
+  width: 10vw;
+}
+.retings {
+  display: flex;
+  padding-top: 2vw;
+}
+.star {
+  font-size: 2vw;
+  color: #F4CE14;
+}
 
 /*BOOKING FORM STYLING*/
 .BookingForm form{
