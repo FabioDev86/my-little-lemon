@@ -9,10 +9,8 @@ export default function BookForm(props){
 
     function handleSubmit(e){
         e.preventDefault();
-        const newAvaibleTimes = props.avaibleTimes.filter( t => t !== time);
-        props.setAvaibleTimes(newAvaibleTimes);
+        props.setAvaibleTimes({ type: time });
     }
-
     return(
         <div className="BookingForm">
             <form onSubmit={handleSubmit}>
