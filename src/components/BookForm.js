@@ -24,6 +24,7 @@ export default function BookForm(props){
                 <input type="number" placeholder="1" min="1" max="10" id="guests" onChange={(e) => {setGuests(e.target.value)}} />
                 <label htmlFor="occasion">Occasion</label>
                 <select id="occasion" onChange={(e) => {setOccasion(e.target.value)}}>
+                    <option>-none-</option>
                     <option>Birthday</option>
                     <option>Anniversary</option>
                 </select>

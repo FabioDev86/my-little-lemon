@@ -12,8 +12,8 @@ function App() {
   function updateTimes(state, action){
     return state.filter( t => t !== action.type);
   }
-  function initialize(){
-    return [
+  function initializeTimes(){
+    const initialState = [
       "17:00",
       "18:00",
       "19:00",
@@ -21,15 +21,9 @@ function App() {
       "21:00",
       "22:00"
     ]
+    return (initialState);
   }
-  const [avaibleTimes, setAvaibleTimes] = useReducer(updateTimes, [
-    "17:00",
-    "18:00",
-    "19:00",
-    "20:00",
-    "21:00",
-    "22:00"
-  ]);
+  const [avaibleTimes, setAvaibleTimes] = useReducer(updateTimes, null, initializeTimes);
 
   return (
     <>

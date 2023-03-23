@@ -172,9 +172,21 @@ nav img {
 }
 
 /*BOOKING FORM STYLING*/
+.reserve-table {
+  text-align: center;
+}
+.reserve-table>h1 {
+  color: #F4CE14;
+  background-color: #495E57;
+}
+.BookingForm {
+  margin-left: 42vw;
+}
 .BookingForm form{
+  border: solid;
   display: grid;
   max-width: 200px;
+  width: 20vw;
   gap: 20px
 }
 
