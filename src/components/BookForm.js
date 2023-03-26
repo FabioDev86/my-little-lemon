@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 export default function BookForm(props){
 
@@ -6,10 +7,15 @@ export default function BookForm(props){
     const [time, setTime] = useState("no time");
     const [guests, setGuests] = useState(0);
     const [occasion, setOccasion] = useState("no occasion");
+    const [formData, setFormData] = useState();
+    const navigate = useNavigate();
 
     function handleSubmit(e){
         e.preventDefault();
+        const form = e.target;
+        setFormData(new FormData(form));
         props.setAvaibleTimes({ type: time });
+        navigate("/confirm");
     }
     return(
         <div className="BookingForm">

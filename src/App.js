@@ -4,11 +4,13 @@ import Footer from './components/Footer';
 import ReserveTable from './components/ReserveTable';
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
-import { useReducer } from 'react';
+import { useReducer, createContext, useState } from 'react';
+import ConfirmedBooking from './components/ConfirmedBooking';
 
 
 function App() {
 
+//UPDATE TIMES
   function updateTimes(state, action){
     return state.filter( t => t !== action.type);
   }
@@ -31,6 +33,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage avaibleTimes={avaibleTimes} />} />
         <Route path='/reserve-table' element={<ReserveTable avaibleTimes={avaibleTimes} setAvaibleTimes={setAvaibleTimes}/>} />
+        <Route path='/confirm' element={<ConfirmedBooking />} />
       </Routes>
       <Footer />
     </>

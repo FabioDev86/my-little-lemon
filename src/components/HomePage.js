@@ -13,9 +13,3 @@ export default function HomePage(props){
         </>
     );
 }
-
-/*
-<ul>
-    {props.avaibleTimes.map((x => <li>{x}</li>))}
-</ul>
-*/
